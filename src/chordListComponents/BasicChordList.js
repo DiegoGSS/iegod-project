@@ -34,8 +34,6 @@ function BasicChordList(props) {
         capo: chord.capo,
         baseFret: chord.baseFret,
       }
-      console.log(chordToRender)
-      console.log(renderedChordsInKey)
       renderedChordsInKey.push(
         <Col md={3} style={tudoPeloIstilo}>
           <Chord

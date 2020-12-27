@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.comjsonChordLibSchema.json",
+  "title": "Chord Lib Schema",
+  "description": "Validates Json Chord Libs",
+  "type": "object",
+  "properties": {
+    "keys": {
+      "description": "List of chord keys",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "main": {
+      "description": "Main information about instrument",
+      "type": "object",
+      "properties": {
+        "strings": {
+          "type": "integer",
+          "exclusiveMinimum": 4,
+          "exclusiveMaximum": 8
+        },
+        "fretsOnChord": {
+          "type": "integer",
+          "exclusiveMinimum": 0
+        },
+        "name": {
+          "type": "string"
+        },
+        "numberOfChords": {
+          "type": "integer",
+          "exclusiveMinimum": 1
+        }
+      },
+      "required": ["strings", "fretsOnChord", "name", "numberOfChords"]
+    },
+    "info": {
+      "description": "Information about the chord list",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": ["description", "title"]
+    },
+    "tunings": {
+      "description": "Tunings of the chords listed",
+      "type": "object"
+    },
+    "chords": {
+      "description": "List of chords",
+      "type": "object"
+    }
+  },
+  "required": ["main", "info", "tunings", "keys", "chords"]
+}
