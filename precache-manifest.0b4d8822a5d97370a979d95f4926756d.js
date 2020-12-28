@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb67bfaa6b159c7a0d9ed3cf211a0e05",
+    "revision": "818fc1d85e414750c3f5d2ece7674bb8",
     "url": "/iegod-project/index.html"
   },
   {
-    "revision": "b18465e2360ce9f14c23",
+    "revision": "a70786e8e673a2f98b0a",
     "url": "/iegod-project/static/css/main.523f09c5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iegod-project/static/js/2.d94680dc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b18465e2360ce9f14c23",
-    "url": "/iegod-project/static/js/main.30313f9e.chunk.js"
+    "revision": "a70786e8e673a2f98b0a",
+    "url": "/iegod-project/static/js/main.109c2fb4.chunk.js"
   },
   {
     "revision": "6ee96dd60d6ad047be35",
