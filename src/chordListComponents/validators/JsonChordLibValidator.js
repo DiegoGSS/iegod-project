@@ -8,8 +8,8 @@ function JsonChordLibValidator(props) {
   const ajv = new Ajv() // options can be passed, e.g. {allErrors: true}
   const validate = ajv.compile(jsonSchemaData)
   const valid = validate(chordLibData)
-  console.log('validacao!', valid, validate.errors)
-  return validate
+  !valid && console.log('Invalid!', validate.errors, chordLibData)
+  return valid
 }
 
 export default JsonChordLibValidator

@@ -40,7 +40,7 @@ function BasicChordList(props) {
         baseFret: chord.baseFret,
       }
       renderedChordsInKey.push(
-        <Col md={3} style={tudoPeloIstilo}>
+        <Col style={tudoPeloIstilo}>
           <p>
             {loadedChords[key][0].key}
             {loadedChords[key][0].suffix}
@@ -57,7 +57,7 @@ function BasicChordList(props) {
   })
 
   return (
-    <Container>
+    <Container fluid>
       <h1>{info.title}</h1>
       <p>{info.description}</p>
       <Row>{listToRender}</Row>

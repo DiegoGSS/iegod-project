@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://example.comjsonChordLibSchema.json",
+  "$id": "http://iegod-project.com/jsonChordLibSchema.json",
   "title": "Chord Lib Schema",
   "description": "Validates Json Chord Libs",
   "type": "object",

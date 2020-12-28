@@ -4,8 +4,6 @@ import majorChordsJson from './jsonChordLibs/majorChords.json'
 import minorChordsJson from './jsonChordLibs/minorChords.json'
 import cagedMajorChordsJson from './jsonChordLibs/cagedMajorChords.json'
 import cagedMinorChordsJson from './jsonChordLibs/cagedMinorChords.json'
-import jsonSchemaJson from './jsonChordLibSchemas/jsonChordLibSchema.json'
-import JsonChordLibValidator from './validators/JsonChordLibValidator'
 
 function ChordListsManager() {
   const majorChordsData = JSON.parse(JSON.stringify(majorChordsJson))
@@ -27,11 +25,6 @@ function ChordListsManager() {
   const cagedMinorChordList = (
     <BasicChordList jsonData={cagedMinorChordsData}></BasicChordList>
   )
-
-  let validationTest = JsonChordLibValidator({
-    schemaJson: jsonSchemaJson,
-    chordLibJson: majorChordsJson,
-  })
 
   return (
     <div>
