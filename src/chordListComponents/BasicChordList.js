@@ -10,6 +10,7 @@ function BasicChordList(props) {
   const loadedTunings = totalData.tunings
   const loadedChords = totalData.chords
   const loadedKeys = totalData.keys
+  const loadedSuffixes = totalData.suffixes
   const info = totalData.info
   const tudoPeloIstilo = {
     width: '20%',
@@ -24,7 +25,11 @@ function BasicChordList(props) {
   const lite = false // defaults to false if omitted
   let listToRender = []
   loadedKeys.forEach((key) => {
-    listToRender.push(<h4>{key} chord</h4>)
+    listToRender.push(
+      <h4>
+        {key} {loadedSuffixes[0]} chord
+      </h4>
+    )
     let renderedChordsInKey = []
     loadedChords[key][0].positions.forEach((chord) => {
       const chordToRender = {
@@ -36,6 +41,10 @@ function BasicChordList(props) {
       }
       renderedChordsInKey.push(
         <Col md={3} style={tudoPeloIstilo}>
+          <p>
+            {loadedChords[key][0].key}
+            {loadedChords[key][0].suffix}
+          </p>
           <Chord
             chord={chordToRender}
             instrument={instrument}
