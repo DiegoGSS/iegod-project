@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/iegod-project/static/css/main.523f09c5.chunk.css",
-    "main.js": "/iegod-project/static/js/main.1a72df4d.chunk.js",
-    "main.js.map": "/iegod-project/static/js/main.1a72df4d.chunk.js.map",
+    "main.js": "/iegod-project/static/js/main.d9f87989.chunk.js",
+    "main.js.map": "/iegod-project/static/js/main.d9f87989.chunk.js.map",
     "runtime-main.js": "/iegod-project/static/js/runtime-main.69395dc8.js",
     "runtime-main.js.map": "/iegod-project/static/js/runtime-main.69395dc8.js.map",
-    "static/js/2.e920b592.chunk.js": "/iegod-project/static/js/2.e920b592.chunk.js",
-    "static/js/2.e920b592.chunk.js.map": "/iegod-project/static/js/2.e920b592.chunk.js.map",
+    "static/js/2.d94680dc.chunk.js": "/iegod-project/static/js/2.d94680dc.chunk.js",
+    "static/js/2.d94680dc.chunk.js.map": "/iegod-project/static/js/2.d94680dc.chunk.js.map",
     "index.html": "/iegod-project/index.html",
-    "precache-manifest.9e9e9a3873310521802a298b822476d8.js": "/iegod-project/precache-manifest.9e9e9a3873310521802a298b822476d8.js",
+    "precache-manifest.74189462ba9ed525fc39757c1da15726.js": "/iegod-project/precache-manifest.74189462ba9ed525fc39757c1da15726.js",
     "service-worker.js": "/iegod-project/service-worker.js",
     "static/css/main.523f09c5.chunk.css.map": "/iegod-project/static/css/main.523f09c5.chunk.css.map",
-    "static/js/2.e920b592.chunk.js.LICENSE.txt": "/iegod-project/static/js/2.e920b592.chunk.js.LICENSE.txt"
+    "static/js/2.d94680dc.chunk.js.LICENSE.txt": "/iegod-project/static/js/2.d94680dc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.69395dc8.js",
-    "static/js/2.e920b592.chunk.js",
+    "static/js/2.d94680dc.chunk.js",
     "static/css/main.523f09c5.chunk.css",
-    "static/js/main.1a72df4d.chunk.js"
+    "static/js/main.d9f87989.chunk.js"
   ]
 }
