@@ -19,9 +19,9 @@ function BasicChordList(props) {
   }
   const lite = false // defaults to false if omitted
   let listToRender = []
-  loadedKeys.forEach((key) => {
+  loadedChords.forEach((chordKey) => {
     let renderedChordsInKey = []
-    loadedChords[key][0].positions.forEach((chord) => {
+    chordKey.positions.forEach((chord) => {
       const chordToRender = {
         frets: chord.frets,
         fingers: chord.fingers,
@@ -40,8 +40,8 @@ function BasicChordList(props) {
               marginTop: '5px',
             }}
           >
-            {loadedChords[key][0].key}
-            {loadedChords[key][0].suffix}
+            {chordKey.key}
+            {chordKey.suffix}
           </p>
           <Chord
             chord={chordToRender}
