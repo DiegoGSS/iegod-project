@@ -2,7 +2,6 @@ import React from 'react'
 import Chord from '@tombatossals/react-chords/lib/Chord'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Container from 'react-bootstrap/Container'
 
 function BasicChordList(props) {
   const totalData = props.jsonData
@@ -10,11 +9,7 @@ function BasicChordList(props) {
   const loadedTunings = totalData.tunings
   const loadedChords = totalData.chords
   const loadedKeys = totalData.keys
-  const loadedSuffixes = totalData.suffixes
   const info = totalData.info
-  const tudoPeloIstilo = {
-    width: '20%',
-  }
   const instrument = {
     strings: loadedInstrument.strings,
     fretsOnChord: loadedInstrument.fretsOnChord,
@@ -25,11 +20,6 @@ function BasicChordList(props) {
   const lite = false // defaults to false if omitted
   let listToRender = []
   loadedKeys.forEach((key) => {
-    listToRender.push(
-      <h4>
-        {key} {loadedSuffixes[0]} chord
-      </h4>
-    )
     let renderedChordsInKey = []
     loadedChords[key][0].positions.forEach((chord) => {
       const chordToRender = {
@@ -40,8 +30,16 @@ function BasicChordList(props) {
         baseFret: chord.baseFret,
       }
       renderedChordsInKey.push(
-        <Col style={tudoPeloIstilo}>
-          <p>
+        <Col xs={6} md={4} lg={3} xl={2}>
+          <p
+            style={{
+              textAlign: 'center',
+              marginRight: '20px',
+              marginLeft: '20px',
+              marginBottom: '5px',
+              marginTop: '5px',
+            }}
+          >
             {loadedChords[key][0].key}
             {loadedChords[key][0].suffix}
           </p>
@@ -57,11 +55,28 @@ function BasicChordList(props) {
   })
 
   return (
-    <Container fluid>
-      <h1>{info.title}</h1>
-      <p>{info.description}</p>
-      <Row>{listToRender}</Row>
-    </Container>
+    <div>
+      <Row style={{ display: 'flex' }}>
+        <h2 style={{ textAlign: 'center', width: '100%', marginTop: '30px' }}>
+          {info.title}
+        </h2>
+      </Row>
+      <Row style={{ display: 'flex' }}>
+        <p
+          style={{
+            textAlign: 'center',
+            marginRight: '20px',
+            marginLeft: '20px',
+            marginBottom: '10px',
+            marginTop: '10px',
+          }}
+        >
+          {info.description}
+        </p>
+      </Row>
+
+      <Row style={{ display: 'flex' }}>{listToRender}</Row>
+    </div>
   )
 }
 
